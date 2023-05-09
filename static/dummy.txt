@@ -1,0 +1,3 @@
+dummy
+
+Semua folder assets ditaruh di folder static
