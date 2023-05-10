@@ -7,8 +7,7 @@ import numpy as np
 import os
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Conv2D, MaxPooling2D, \
-Flatten, Dense, Activation, Dropout,LeakyReLU
+from tensorflow.keras.layers import Conv2D, MaxPooling2D,Flatten, Dense, Activation, Dropout,LeakyReLU
 from PIL import Image
 from fungsi import make_model
 from flask_ngrok import run_with_ngrok
@@ -22,7 +21,7 @@ app.config['UPLOAD_EXTENSIONS']  = ['.jpg','.JPG']
 app.config['UPLOAD_PATH']        = './static/images/uploads/'
 
 # load model
-model = tf.keras.models.load_model("cornmodel.h5")
+model = tf.keras.models.load_model("modelcorn.h5")
 model.summary()
 
 # define classes
@@ -63,28 +62,16 @@ def apiDeteksi():
 			uploaded_file.save(os.path.join(app.config['UPLOAD_PATH'], filename))
 			
 			# Memuat Gambar
-			test_image         = Image.open('.' + gambar_prediksi)
+			test_image         = Image.open('.' + gambar_prediksi).resize(IMG_SIZE)
+
+			img_array = np.expand_dims(test_image, 0)
 			
 
-			# Convert image to array
-			image_array = np.array(test_image)
+			predictions = model.predict(img_array)
+			hasil_prediksi = corndiseases_classes[np.argmax(predictions[0])]
 
-			# resize and normalize array
-			image_array_resized = tf.image.resize(image_array, IMG_SIZE)
-			image_array_normalized = (image_array_resized / 255) - 0.5
-			image_array_normalized = np.expand_dims(image_array_normalized, axis=0)
-
-			# convert array to tensor
-			test_image_x = image_array_normalized.reshape(1, 299, 299, 3)
+			print(hasil_prediksi)
 			
-			# Prediksi Gambar
-			y_pred_test_single         = model.predict(test_image_x)
-			y_pred_test_classes_single = np.argmax(y_pred_test_single, axis=1)
-			
-			hasil_prediksi = corndiseases_classes[y_pred_test_classes_single.item()]
-
-			
-			print(y_pred_test_classes_single)
 			# Return hasil prediksi dengan format JSON
 			return jsonify({
 				"prediksi": hasil_prediksi,
