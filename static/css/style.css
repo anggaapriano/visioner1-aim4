@@ -1,11 +1,3 @@
-/**
-* Template Name: Bethany
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -426,10 +418,10 @@ h6 {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 20px 50px;
+  padding: 10px 28px;
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
@@ -643,7 +635,7 @@ section {
 
 .why-us .icon-boxes .icon-box h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 650;
   margin: 0 0 30px 0;
 }
 
@@ -659,8 +651,8 @@ section {
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
-/* .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("../img/cta-bg.jpg") fixed center center;
+.cta {
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("../img/cta-corn-bg.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -693,7 +685,7 @@ section {
 .cta .cta-btn:hover {
   background: 	#FFC300;
   border: 2px solid 	#FFC300;
-} */
+}
 
 /*--------------------------------------------------------------
 # Services
@@ -757,7 +749,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+/* .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
 
@@ -876,12 +868,12 @@ section {
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
-}
+} */
 
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/* .portfolio-details {
   padding-top: 40px;
 }
 
@@ -941,12 +933,12 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
+/* .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
 }
@@ -1020,7 +1012,7 @@ section {
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: 	#FFC300;
-}
+} */
 
 /*--------------------------------------------------------------
 # Team
@@ -1303,7 +1295,7 @@ section {
   background: #f1f0f2;
 }
 
-#footer .footer-top {
+/* #footer .footer-top {
   padding: 60px 0 30px 0;
   background: #f9f8f9;
 }
@@ -1421,15 +1413,15 @@ section {
 
 #footer .footer-newsletter form input[type=submit]:hover {
   background: #00664b;
-}
+} */
 
 #footer .credits {
   padding-top: 5px;
   font-size: 13px;
-  color: #444444;
+  color: #cbfe00;
 }
 
-#footer .social-links a {
+/* #footer .social-links a {
   font-size: 18px;
   display: inline-block;
   background: 	#FFC300;
@@ -1448,4 +1440,15 @@ section {
   background: #00805d;
   color: #fff;
   text-decoration: none;
-}
+} */
+
+/* New Footer */
+
+/* .footer {
+  background-color: #f6f6f7;
+  color: #36343a;
+  padding: 16px;
+  text-align: center;
+  } */
+
+  /* End New Footer */
