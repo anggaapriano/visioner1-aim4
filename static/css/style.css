@@ -1005,6 +1005,46 @@ section#imagedetection {
   }
 
 
+  @media screen and (max-width: 600px) {
+    /* Styling khusus untuk tampilan seluler */
+
+    .left-section {
+      height: 800px;
+    }
+
+
+    .chatbot-body {
+      /* Pengaturan tampilan untuk versi seluler */
+      bottom: 12px; /* Jarak dari bawah */
+      right: 0; /* Jarak dari kanan */
+      z-index: 999; 
+      left: 0;
+      width: 300px;
+    }
+
+    .msger {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      width: 300px;
+      max-width: 867px;
+      margin: 25px 10px;
+      height: calc(100% - 50px);
+      background: var(--body-bg);
+      box-shadow: 0 15px 15px -5px rgba(0, 0, 0, 0.2);
+    }
+
+    .msg-img {
+      width: 30px;
+      height: 30px;
+    }
+
+    .msg-bubble {
+      width: 230px;
+      max-width: 280px;
+    }
+  }
+
 
 /*--------------------------------------------------------------
 # Portfolio
