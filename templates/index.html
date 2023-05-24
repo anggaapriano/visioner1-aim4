@@ -30,6 +30,9 @@
   <!-- Template Main CSS File -->
   <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
 
+  <!-- Javascript -->
+  <script src="{{ url_for('static', filename='js/jquery_3.6.0.min.js') }}" ></script>
+
 </head>
 
 <body>
@@ -262,7 +265,7 @@
           <div class="col-lg-4">
             <div class="section-title" data-aos="fade-right">
               <h2>Layanan</h2>
-              <p>Cukup dengan klik tombol yang tersedia maka anda akan terhubung dengan bot cornny yang siap membantu anda.</p>
+              <p>Cukup dengan klik tombol yang tersedia maka anda akan diarahkan ke beberapa layanan yang tersedia di Cornny.</p>
             </div>
           </div>
           <div class="col-lg-8">
@@ -308,6 +311,57 @@
 
       </div>
     </section><!-- End Services Section -->
+
+    <!-- ======= Computer Vision Section ======= -->
+    <section id="imagedetection" class="services">
+      <div id="aplikasi" class="container">
+        <div class="row justify-content-start">
+          <div class="col-md-6 left-section">
+            <div class="section-title" data-aos="fade-right">
+              <h2>Cara Penggunaan Sistem Deteksi</h2>
+            </div>
+            <div class="step">
+              <div class="step-icon">
+                <ion-icon name="share-outline"></ion-icon>
+              </div>
+              <div class="step-content">
+                <h4>1. Klik tombol Unggah Gambar</h4>
+                <p>Anda perlu menyiapkan gambar daun tanaman jagung anda. Pastikan format gambar yang diunggah adalah .jpg</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-icon">
+                <ion-icon name="rocket-outline"></ion-icon>
+              </div>
+              <div class="step-content">
+                <h4>2. Menunggu Hasil Keluar</h4>
+                <p>Setelah unggah gambar, sistem kami akan memproses dan hasil dari prediksi akan muncul segera.</p>
+              </div>
+            </div>
+            <form>
+              <div class="image-preview text-left">
+                <label for="input_gambar">Pilih File Gambar</label>
+                <input type="file" id="input_gambar" name="file">
+              </div>
+              <div class="text-center">
+                <button id="prediksi_submit" type="submit" class="upload-button">Unggah Gambar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6 right-section text-center">
+            <h2>Hasil Prediksi</h2>
+            <p>Hasil prediksi akan muncul di sini.</p>
+            <div id="hasil_prediksi">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- End Services Section -->
+
 
     <!-- ======= Portfolio Section ======= -->
     <!-- <section id="portfolio" class="portfolio">
@@ -806,6 +860,10 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
   <!-- Vendor JS Files -->
   <script src="{{ url_for('static', filename='vendor/purecounter/purecounter_vanilla.js') }}"></script>
   <script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script> 
@@ -817,6 +875,7 @@
 
   <!-- Template Main JS File -->
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  <script  src="{{ url_for('static', filename='js/client-side.js') }}"></script>
 
 </body>
 
