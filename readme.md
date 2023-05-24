@@ -33,5 +33,8 @@ Chatbot untuk memberikan informasi seputar penyakit tanaman jagung dan juga cara
 * Modelling
     * Keras
     * Tensorflow
+    * nltk
+    * numpy
+    * pandas
 * Deployment
     * Ngrok
