@@ -10,7 +10,7 @@ Projek Akhir di Orbit Future Academy
 Deteksi penyakit pada daun tanaman jagung melalui gambar daun tanaman jagung yang diunggah oleh pengguna
 
 ### Natural Language Processing
-* Chatbot untuk memberikan informasi seputar penyakit tanaman jagung dan juga cara pencegahannya.
+Chatbot untuk memberikan informasi seputar penyakit tanaman jagung dan juga cara pencegahannya.
 
 ## Team Visioner 1
 * Jeremyas Cornelis Abigail Wihardjono
