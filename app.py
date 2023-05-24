@@ -7,6 +7,14 @@ import tensorflow as tf
 from PIL import Image
 from flask_ngrok import run_with_ngrok
 
+
+from process import generate_response, preparation 
+
+
+# download nltk
+preparation()
+
+
 app = Flask(__name__)
 
 @app.route('/', methods=["GET"])
@@ -37,6 +45,13 @@ IMG_SIZE = (299, 299)
 @app.route("/")
 def beranda():
 	return render_template('index.html')
+
+# ROUTING untuk chatbot
+@app.route("/get")
+def get_bot_response():
+    user_input = str(request.args.get('msg'))
+    result = generate_response(user_input)
+    return result
 
 # [Routing untuk API]	
 @app.route("/api/deteksi",methods=['POST'])

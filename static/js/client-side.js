@@ -76,5 +76,19 @@ $(document).ready(function(){
       $("#hasil_prediksi").html(str);
     }  
   })
-    
+
+  
+  const btn = document.querySelector('.msg-text-btn');
+  const chatbotBody = document.querySelector('.chatbot-body');
+  
+  btn.addEventListener('click', () => {
+    if (chatbotBody.style.display === 'none') {
+      chatbotBody.style.display = 'flex'; // Tampilkan chatbot-body jika sebelumnya disembunyikan
+      chatbotBody.style.bottom = '100px'; // Atur jarak bawah yang diinginkan
+    } else {
+      chatbotBody.style.display = 'none'; // Sembunyikan chatbot-body jika sebelumnya ditampilkan
+      chatbotBody.style.bottom = '20px'; // Kembalikan ke jarak bawah awal
+    }
+  });
+  
   
