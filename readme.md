@@ -12,6 +12,9 @@ Deteksi penyakit pada daun tanaman jagung melalui gambar daun tanaman jagung yan
 ### Natural Language Processing
 Chatbot untuk memberikan informasi seputar penyakit tanaman jagung dan juga cara pencegahannya.
 
+### Reinforcement Learning
+Permainan 2D sederhana dimana pemain membantu si jagung untuk bertemu dengan petani dan menghindari alien pencuri. Pemain juga dapat memerintahkan CornnyBot untuk menyelesaikan permainan.
+
 ## Team Visioner 1
 * Jeremyas Cornelis Abigail Wihardjono
 * Angga Apriano Hermawan
@@ -36,5 +39,6 @@ Chatbot untuk memberikan informasi seputar penyakit tanaman jagung dan juga cara
     * nltk
     * numpy
     * pandas
+    * opengym
 * Deployment
     * Ngrok
