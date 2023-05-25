@@ -1005,11 +1005,208 @@ section#imagedetection {
   }
 
 
+/* REINFORCEMENT LEARNING */
+
+div#fungame {
+  display: flex;
+}
+
+.env_permainan {
+	padding-left: 0px;	
+}
+
+.btn {
+  border: 1px solid transparent;
+}
+
+.btn .btn-lg {
+  padding: 10px 16px;
+  border-radius: 6px
+  line-height: 1.33;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 100px 100px 100px 100px;
+	grid-template-rows: 90px 90px 90px 90px;
+  padding-left: 60px;
+	margin-inline: auto;
+}
+
+.grid-item-beku { 
+	background-image: url("/static/img/frozen.JPG");
+	background-repeat: no-repeat;
+	background-size: 100px 90px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	font-size: 10px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.grid-item-beku-pemain {
+	background-image: url("/static/img/frozen-pemain.JPG");
+	background-repeat: no-repeat;
+	background-size: 100px 90px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	font-size: 10px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.grid-item-awal {
+	background-image: url("/static/img/awal.JPG");
+	background-repeat: no-repeat;
+	background-size: 100px 90px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	font-size: 10px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.grid-item-goal {
+	background-image: url("/static/img/goal.JPG");
+	background-repeat: no-repeat;
+	background-size: 100px 90px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	font-size: 10px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.grid-item-goal-pemain {
+	background-image: url("/static/img/goal-pemain.JPG");
+	background-repeat: no-repeat;
+	background-size: 100px 90px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	font-size: 10px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.grid-item-lubang {
+	background-image: url("/static/img/lubang.JPG");
+	background-repeat: no-repeat;
+	background-size: 100px 90px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	font-size: 10px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.grid-item-lubang-pemain {
+	background-image: url("/static/img/lubang-pemain.JPG");
+	background-repeat: no-repeat;
+	background-size: 100px 90px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	font-size: 10px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+@media screen and (max-width: 900px) {
+  .left-section {
+    height: 650px;
+  }
+
+  .grid-container {
+    margin-top: -20px;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 70px 70px 70px 70px;
+    padding-left: 20px;
+  }
+
+  .grid-item-awal {
+    background-size: 80px 70px;
+  }
+
+  .grid-item-lubang-pemain {
+    background-size: 80px 70px;
+  }
+
+  .grid-item-beku-pemain {
+    background-size: 80px 70px;
+  }
+
+  .grid-item-beku {
+    background-size: 80px 70px;
+  }
+
+  .grid-item-lubang {
+    background-size: 80px 70px;
+  }
+
+  .grid-item-goal {
+    background-size: 80px 70px;
+  }
+
+  .grid-item-goal-pemain {
+    background-size: 80px 70px;
+  }
+}
+
+
+@media screen and (max-width: 780px) {
+
+  .left-section {
+    height: 500px;
+  }
+
+  div#fungame .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-container {
+    margin-top: -20px;
+    grid-template-columns: 90px 90px 90px 90px;
+    grid-template-rows: 80px 80px 80px 80px;
+    padding-left: 45px
+  }
+
+  .grid-item-awal {
+    background-size: 90px 80px;
+  }
+
+  .grid-item-lubang-pemain {
+    background-size: 90px 80px;
+  }
+
+  .grid-item-beku-pemain {
+    background-size: 90px 80px;
+  }
+
+  .grid-item-beku {
+    background-size: 90px 80px;
+  }
+
+  .grid-item-lubang {
+    background-size: 90px 80px;
+  }
+
+  .grid-item-goal {
+    background-size: 90px 80px;
+  }
+
+  .grid-item-goal-pemain {
+    background-size: 90px 80px;
+  }
+
+  
+}
+
+
+
   @media screen and (max-width: 600px) {
     /* Styling khusus untuk tampilan seluler */
 
     .left-section {
-      height: 800px;
+      height: 600px;
     }
 
 
@@ -1043,6 +1240,59 @@ section#imagedetection {
       width: 230px;
       max-width: 280px;
     }
+ 
+
+    .sisi-kiri {
+      padding-left: 25px;
+    }
+
+
+    .env_permainan .grid-container {
+      max-width: 300px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+
+    .left-section {
+      height: 800px;
+    }
+
+    .grid-container {
+      margin-top: -20px;
+      grid-template-columns: 70px 70px 70px 70px;
+      grid-template-rows: 60px 60px 60px 60px;
+      margin-left: -40px;
+    }
+
+    .grid-item-awal {
+      background-size: 70px 60px;
+    }
+
+    .grid-item-lubang-pemain {
+      background-size: 70px 60px;
+    }
+
+    .grid-item-beku-pemain {
+      background-size: 70px 60px;
+    }
+
+    .grid-item-beku {
+      background-size: 70px 60px;
+    }
+
+    .grid-item-lubang {
+      background-size: 70px 60px;
+    }
+
+    .grid-item-goal {
+      background-size: 70px 60px;
+    }
+
+    .grid-item-goal-pemain {
+      background-size: 70px 60px;
+    }
+
   }
 
 
