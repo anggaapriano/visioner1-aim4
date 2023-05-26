@@ -764,7 +764,7 @@ section#imagedetection {
 .left-section {
   background-color: #ffffff;
   padding: 20px;
-  height: 400px;
+  height: 500px;
 }
 
 .right-section {
@@ -1107,6 +1107,12 @@ div#fungame {
   color: #333;
   background-color: #fff;
   border-color: #ccc;
+}
+
+@media screen and (max-width: 1000px) {
+  .left-section {
+    height: 600px;
+  }
 }
 
 @media screen and (max-width: 900px) {
