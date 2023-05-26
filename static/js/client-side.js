@@ -431,7 +431,7 @@ $(document).ready(function(){
   // Fungsi untuk memanggil API agar Menggerakkan Agent Robot
   function gerak_robot() {
 	// Tampilkan Status Permainan bahwa robot sedang bermain
-	pesan = 'Robot sedang bermain'
+	pesan = 'CornnyBot sedang bermain'
 	display_status_permainan(pesan);
 	  
 	// Panggil API dengan timeout 1 detik (1000 ms)
@@ -469,7 +469,7 @@ $(document).ready(function(){
 					// tampilkan status permainan 
 					// bahwa robot kalah
 					if(state != 15) {
-						pesan = 'Robot kalah (tidak goal) :('
+						pesan = 'CornnyBot kalah (tidak goal) :('
 						display_status_permainan(pesan);
 					}
 				}
@@ -495,7 +495,7 @@ $(document).ready(function(){
   function robot_belajar() {
 	// Tampilkan Status Permainan bahwa agent robot
 	// sedang belajar
-	pesan = 'Robot sedang belajar'
+	pesan = 'CornnyBot sedang belajar'
 	display_status_permainan(pesan);
 	  
 	// Panggil API dengan timeout 1 detik (1000 ms)
