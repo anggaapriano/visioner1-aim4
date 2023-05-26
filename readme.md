@@ -15,6 +15,11 @@ Chatbot untuk memberikan informasi seputar penyakit tanaman jagung dan juga cara
 ### Reinforcement Learning
 Permainan 2D sederhana dimana pemain membantu si jagung untuk bertemu dengan petani dan menghindari alien pencuri. Pemain juga dapat memerintahkan CornnyBot untuk menyelesaikan permainan.
 
+### GUIDE
+
+`pip install gym==0.17.3` <br>
+`flask run`
+
 ## Team Visioner 1
 * Jeremyas Cornelis Abigail Wihardjono
 * Angga Apriano Hermawan
