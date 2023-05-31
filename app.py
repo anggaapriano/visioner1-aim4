@@ -153,6 +153,10 @@ def apiReset():
 	
 		# Set nilai state menjadi nilai awal
 		robot_current_state = 0
+
+		# peta_string = ""
+		# if peta is not None:
+		# 	peta_string = peta[0] + peta[1] + peta[2] + peta[3]
 		
 		# Konversi peta dari array atau list menjadi string
 		peta_string = peta[0] + peta[1] + peta[2] + peta[3]
