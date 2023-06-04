@@ -49,4 +49,5 @@ Permainan 2D sederhana dimana pemain membantu si jagung untuk bertemu dengan pet
     * Ngrok
 
 # Preview Cornny Website
-[preview-image](prev-ui.jpg)
+
+![previmage](prev-ui.jpg)
