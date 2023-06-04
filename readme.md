@@ -47,3 +47,6 @@ Permainan 2D sederhana dimana pemain membantu si jagung untuk bertemu dengan pet
     * opengym
 * Deployment
     * Ngrok
+
+# Preview Cornny Website
+[preview-image](prev-ui.jpg)
